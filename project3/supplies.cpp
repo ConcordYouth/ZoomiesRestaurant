@@ -1,4 +1,4 @@
-#include "supplies.h"
+#include "supplies.hpp"
 
 #include <iostream>
 #include <string>
@@ -21,6 +21,8 @@ void Supplies::adjustvegetables(int v) { vegetables = v; }
 double Supplies::getBalance() { return balance; }
 void Supplies::adjustBalance(double bal) { balance = bal; }
 void Supplies::printInv() {
-  cout << bread << " bread : meat " << meat << " " << vegetables
-       << " vegetables : balance " << balance << endl;
+  cout << "bread: " << bread << endl;
+  cout << "meat: " << meat << endl;
+  cout << "vegetables " << vegetables << endl;
+  cout << "Balance of $" << balance << endl;
 }
